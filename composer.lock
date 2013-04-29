@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "92d8f0d410f1bff6635f25f847b5a182",
+    "hash": "9efff36a62bae3241c82b5d8ae272e09",
     "packages": [
         {
             "name": "twitter/bootstrap",
@@ -39,7 +39,7 @@
     "aliases": [
 
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "twitter/bootstrap": 20
     },

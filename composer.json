@@ -3,6 +3,14 @@
         {
             "email": "hswong3i@pantarei-design.com", 
             "name": "Wong Hoi Sing Edison"
+        }, 
+        {
+            "email": "syho2d@pantarei-design.com", 
+            "name": "Ho Shuk Yi Esther"
+        }, 
+        {
+            "email": "wstang5c@pantarei-design.com", 
+            "name": "Wilson Tang"
         }
     ], 
     "autoload": {
