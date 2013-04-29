@@ -1,38 +1,37 @@
 {
+    "name": "pantarei/bootstrap-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony BootstrapBundle",
+    "homepage": "https://github.com/pantarei/bootstrap-bundle",
+    "license": "MIT",
+    "keywords": [
+        "bootstrap",
+        "css"
+    ],
     "authors": [
         {
-            "email": "hswong3i@pantarei-design.com", 
-            "name": "Wong Hoi Sing Edison"
-        }, 
+            "name": "Wong Hoi Sing Edison",
+            "email": "hswong3i@pantarei-design.com",
+            "homepage": "http://edin.no-ip.com"
+        },
         {
-            "email": "syho2d@pantarei-design.com", 
             "name": "Ho Shuk Yi Esther"
-        }, 
+            "email": "syho2d@pantarei-design.com",
+        },
         {
-            "email": "wstang5c@pantarei-design.com", 
             "name": "Wilson Tang"
+            "email": "wstang5c@pantarei-design.com",
         }
-    ], 
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "twitter/bootstrap": "dev-3.0.0-wip"
+    },
     "autoload": {
         "psr-0": {
             "Pantarei\\Bundle\\BootstrapBundle": ""
         }
-    }, 
-    "description": "Symfony BootstrapBundle", 
-    "homepage": "https://github.com/pantarei/bootstrap-bundle", 
-    "keywords": [
-        "bootstrap", 
-        "css"
-    ], 
-    "license": "MIT", 
-    "minimum-stability": "dev", 
-    "name": "pantarei/bootstrap-bundle", 
-    "require": {
-        "php": ">=5.3.2"
-    }, 
-    "require-dev": {
-        "twitter/bootstrap": "dev-3.0.0-wip"
-    }, 
-    "target-dir": "Pantarei/Bundle/BootstrapBundle", 
-    "type": "symfony-bundle"
+    },
+    "target-dir": "Pantarei/Bundle/BootstrapBundle",
+    "minimum-stability": "dev"
 }
