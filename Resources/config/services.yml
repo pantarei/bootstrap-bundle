@@ -1,0 +1,7 @@
+parameters:
+#    pantarei_bootstrap.example.class: Pantarei\Bundle\BootstrapBundle\Example
+
+services:
+#    pantarei_bootstrap.example:
+#        class: %pantarei_bootstrap.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

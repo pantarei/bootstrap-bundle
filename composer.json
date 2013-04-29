@@ -1,0 +1,32 @@
+{
+    "authors": [
+        {
+            "email": "hswong3i@pantarei-design.com", 
+            "name": "Wong Hoi Sing Edison"
+        }
+    ], 
+    "autoload": {
+        "psr-0": {
+            "Pantarei\\Bundle\\BootstrapBundle": ""
+        }
+    }, 
+    "description": "Symfony BootstrapBundle", 
+    "extra": {
+        "branch-alias": {
+            "dev-master": "dev-3.0.0-wip"
+        }
+    }, 
+    "homepage": "https://github.com/pantarei/bootstrap-bundle", 
+    "keywords": [
+        "bootstrap", 
+        "css"
+    ], 
+    "license": "MIT", 
+    "name": "pantarei/bootstrap-bundle", 
+    "require": {
+        "php": ">=5.3.2", 
+        "twitter/bootstrap": "dev-3.0.0-wip"
+    }, 
+    "target-dir": "Pantarei/Bundle/BootstrapBundle", 
+    "type": "symfony-bundle"
+}
