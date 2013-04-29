@@ -25,11 +25,11 @@
         "css"
     ], 
     "license": "MIT", 
-    "minimum-stability": "dev", 
+    "minimum-stability": "alpha", 
     "name": "pantarei/bootstrap-bundle", 
     "require": {
         "php": ">=5.3.2", 
-        "twitter/bootstrap": "dev-3.0.0-wip"
+        "twitter/bootstrap": "dev-3.0.0-wip@dev"
     }, 
     "target-dir": "Pantarei/Bundle/BootstrapBundle", 
     "type": "symfony-bundle"
