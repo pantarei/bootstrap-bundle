@@ -11,12 +11,18 @@
         }
     }, 
     "description": "Symfony BootstrapBundle", 
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.0-wip-dev"
+        }
+    }, 
     "homepage": "https://github.com/pantarei/bootstrap-bundle", 
     "keywords": [
         "bootstrap", 
         "css"
     ], 
     "license": "MIT", 
+    "minimum-stability": "dev", 
     "name": "pantarei/bootstrap-bundle", 
     "require": {
         "php": ">=5.3.2", 
