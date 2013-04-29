@@ -11,11 +11,6 @@
         }
     }, 
     "description": "Symfony BootstrapBundle", 
-    "extra": {
-        "branch-alias": {
-            "dev-master": "3.0.0-wip-dev"
-        }
-    }, 
     "homepage": "https://github.com/pantarei/bootstrap-bundle", 
     "keywords": [
         "bootstrap", 
