@@ -99,12 +99,6 @@ If you hope to enable the examples as reference, update your `app/config/routing
 
 Then you can access `_bootstrap/starter-template` or other pages as example.
 
-License
--------
-
-- The bundle is licensed under the [MIT License](http://opensource.org/licenses/MIT)
-- The CSS and Javascript from the Twitter Bootstrap are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
-
 Create Page
 --------
 
@@ -141,3 +135,9 @@ Finally, you can check the path ../app_dev.php/index.
 
 Good luck!
 --------
+
+License
+-------
+
+- The bundle is licensed under the [MIT License](http://opensource.org/licenses/MIT)
+- The CSS and Javascript from the Twitter Bootstrap are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
