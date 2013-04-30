@@ -116,9 +116,6 @@ Check the name and the directory and press yes.
 
 Then ssh or sshfs to the file, [ symfony/src/your directory/Controller/DefaultController.php ],then correct as below. :
 
-	namespace Pantarei\Bundle\WebBundle\Controller;
-
-	use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 	class DefaultController extends Controller
 	{
@@ -132,7 +129,6 @@ Then ssh or sshfs to the file, [ symfony/src/your directory/Controller/DefaultCo
 also, ssh or sshfs to the file, [ symfony/src/your directory/Resources/config/routing.yml ]:
 Then correct as below.
 
-	pantarei_web_homepage:
     pattern:  /{path}
     defaults: { _controller: PantareiWebBundle:Default:index, path: index }
     
@@ -141,7 +137,7 @@ Correct as below.
 
 	Hello world!!
 
-Finally, you can check the path at ../app_dev.php/index.
+Finally, you can check the path ../app_dev.php/index.
 
 Good luck!
 --------
