@@ -145,8 +145,6 @@ then add the command below in the composer.json :
     "extra": {
 	"symfony-assets-install": "symlink"
         }
-    }
-	}
 	
 and execute the command `composer update`:
 
