@@ -147,6 +147,9 @@ then add the command below in the composer.json :
         }
     }
 	}
+	
+and execute the command `composer update`:
+
 
 Create cusotom.css file in [yourdirectory]/Resources/public/css, then add below line into your page :
 
