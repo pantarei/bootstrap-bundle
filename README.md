@@ -54,7 +54,7 @@ Create symlink for the asset files from the `vendor/twitter/bootstrap` directory
     cd web/bundles/twitter
     ln -s ../../../vendor/twitter/bootstrap bootstrap
 
-[ Below are already in file, change if need. ] :
+[ Below are already in file, change if need. ]:
 Now you can include boostrap css and js in main template:
 
     <link rel="stylesheet" href="{{ asset('bundles/twitter/bootstrap/docs/assets/css/bootstrap.css') }}">
