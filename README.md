@@ -42,6 +42,7 @@ Since you are probably already using Composer this is the easiest way to get sta
       }
     }
 
+and execute the command `composer update`:
 
 ### Without Assetic
 
