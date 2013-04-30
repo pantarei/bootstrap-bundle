@@ -18,7 +18,7 @@ First you need to add `pantarei/bootstrap-bundle` to `composer.json` (in the Sym
 
 and execute the command `composer update`:
 
-You also have to add `PantareiBootstrapBundle` to your `AppKernel.php`:
+You also have to add `PantareiBootstrapBundle` to your `AppKernel.php` (in the symfony/app ):
 
     class AppKernel extends Kernel
     {
