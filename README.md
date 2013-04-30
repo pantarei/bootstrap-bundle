@@ -104,7 +104,7 @@ Create Page
 
 Go to Symfony directory in ssh :
 
-	php app/console generate:bundle --namespace=Pantarei/Bundle/[yournameBundle] --format=yml
+	php app/console generate:bundle --namespace=[yournameBundle] --format=yml
 
 Check the name and the directory and press yes.
 
@@ -115,7 +115,7 @@ Then ssh or sshfs to the file, [ symfony/src/your directory/Controller/DefaultCo
 	{
     public function indexAction($path = 'index')
     {
-        return $this->render('PantareiWebBundle:Default:' . $path . '.html.twig');
+        return $this->render('[yournameBundle]:Default:' . $path . '.html.twig');
     }
 	}
 
@@ -124,7 +124,7 @@ also, ssh or sshfs to the file, [ symfony/src/your directory/Resources/config/ro
 Then correct as below.
 
     pattern:  /{path}
-    defaults: { _controller: PantareiWebBundle:Default:index, path: index }
+    defaults: { _controller: [yournameBundle]:Default:index, path: index }
     
 Then, ssh or sshfs to the file, [ symfony/src/your directory/Resources/views/Default/index.html.twig ]:
 Correct as below.
@@ -132,9 +132,6 @@ Correct as below.
 	Hello world!!
 
 Finally, you can check the path ../app_dev.php/index.
-
-Good luck!
---------
 
 License
 -------
