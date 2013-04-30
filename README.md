@@ -31,10 +31,12 @@ You also have to add `PantareiBootstrapBundle` to your `AppKernel.php` (in the s
       }
     }
 
+and execute the command `composer update`:
+
 Assets
 ------
 
-Since you are probably already using Composer this is the easiest way to get started. Update your `composer.json` file and execute the command `composer update`:
+Go to `composer.json` (in the Symfony directory ) :
 
     {
       "require": {
@@ -52,7 +54,7 @@ Create symlink for the asset files from the `vendor/twitter/bootstrap` directory
     cd web/bundles/twitter
     ln -s ../../../vendor/twitter/bootstrap bootstrap
 
-[ Below are already in file, change if need. ]
+[ Below are already in file, change if need. ] :
 Now you can include boostrap css and js in main template:
 
     <link rel="stylesheet" href="{{ asset('bundles/twitter/bootstrap/docs/assets/css/bootstrap.css') }}">
