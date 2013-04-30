@@ -36,11 +36,10 @@ You also have to add `PantareiBootstrapBundle` to your `AppKernel.php`:
       ...
     }
 
-
 Assets
 ------
 
-Since you are probably already using Composer this is the easiest way to get started. Update your `composer.json` file and execute the following line: `composer update twitter/bootstrap`.
+Since you are probably already using Composer this is the easiest way to get started. Update your `composer.json` file and execute the following line: `composer update`:
 
     {
       "require": {
@@ -48,8 +47,43 @@ Since you are probably already using Composer this is the easiest way to get sta
       }
     }
 
-Then create symlink for the asset files from the `vendor/twitter/bootstrap` directory into your web directory:
+### Without Assetic
 
-    mkdir -p web/bundle/twitter
-    cd web/bundle/twitter
-    ln -s ../../../vendor/twitter/bootstrap/docs/assets bootstrap
+Create symlink for the asset files from the `vendor/twitter/bootstrap` directory into your web directory:
+
+    mkdir -p web/bundles/twitter
+    cd web/bundles/twitter
+    ln -s ../../../vendor/twitter/bootstrap bootstrap
+
+Now you can include boostrap css and js in main template:
+
+    <link rel="stylesheet" href="{{ asset('bundles/twitter/bootstrap/docs/assets/css/bootstrap.css') }}">
+    <script src="{{ asset('bundles/twitter/bootstrap/docs/assets/js/jquery.js') }}"></script>
+    <script src="{{ asset('bundles/twitter/bootstrap/docs/assets/js/bootstrap.min.js') }}"></script>
+
+### With Assetic
+
+If you want to use LessPHP to compile the Bootstrap LESS files, you need update your `composer.json` file and execute the following line: `composer update`:
+
+    {
+      "require": {
+        "leafo/lessphp": "0.3.9"
+      }
+    }
+
+Now change your `app/config/config.yml` to this:
+
+    # Assetic Configuration
+    assetic:
+      filters:
+        lessphp:
+          file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
+          apply_to: "\.less$"
+
+After that, the last thing we need is to include bootstrap in main template:
+
+    {% stylesheets
+      'bundles/twitter/bootstrap/less/*.less'
+    %}
+      <link rel="styleshet" href="{{ asset_url }} "/>
+    {% endstylesheets %}

@@ -6,8 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function indexAction($path = 'index')
     {
-        return $this->render('PantareiBootstrapBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('PantareiBootstrapBundle:Default:' . $path . '.html.twig');
     }
 }
