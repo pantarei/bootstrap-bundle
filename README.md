@@ -139,7 +139,7 @@ Then correct as below.
 Then, ssh or sshfs to the file, [ symfony/src/your directory/Resources/views/Default/index.html.twig ]:
 Correct as below.
 
-Hello world!!
+	Hello world!!
 
 Finally, you can check the path at ../app_dev.php/index.
 
