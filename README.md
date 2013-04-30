@@ -54,7 +54,7 @@ Create symlink for the asset files from the `vendor/twitter/bootstrap` directory
     cd web/bundles/twitter
     ln -s ../../../vendor/twitter/bootstrap bootstrap
 
-[ Below are already in file, change if need. ]:
+[ Below are already in file, change if need. ]
 Now you can include boostrap css and js in main template:
 
     <link rel="stylesheet" href="{{ asset('bundles/twitter/bootstrap/docs/assets/css/bootstrap.css') }}">
@@ -104,3 +104,44 @@ License
 
 - The bundle is licensed under the [MIT License](http://opensource.org/licenses/MIT)
 - The CSS and Javascript from the Twitter Bootstrap are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+### Create Page
+--------
+Go to Symfony directory in ssh :
+php app/console generate:bundle --namespace=Pantarei/Bundle/[yournameBundle] --format=yml
+
+Check the name and the directory and press yes.
+
+Then ssh or sshfs to the file, [ symfony/src/your directory/Controller/DefaultController.php ]:
+Then correct as below.
+
+
+namespace Pantarei\Bundle\WebBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class DefaultController extends Controller
+{
+    public function indexAction($path = 'index')
+    {
+        return $this->render('PantareiWebBundle:Default:' . $path . '.html.twig');
+    }
+}
+
+
+also, ssh or sshfs to the file, [ symfony/src/your directory/Resources/config/routing.yml ]:
+Then correct as below.
+
+pantarei_web_homepage:
+    pattern:  /{path}
+    defaults: { _controller: PantareiWebBundle:Default:index, path: index }
+    
+Then, ssh or sshfs to the file, [ symfony/src/your directory/Resources/views/Default/index.html.twig ]:
+Correct as below.
+
+Hello world!!
+
+Finally, you can check the path at ../app_dev.php/index.
+
+Good luck!
+--------
