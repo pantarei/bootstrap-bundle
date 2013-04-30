@@ -48,11 +48,10 @@ and execute the command `composer update`:
 
 ### Without Assetic
 
-Create symlink for the asset files from the `vendor/twitter/bootstrap` directory into your web directory (Your "Symfony" folder):
+Create symlink for the asset files from the `vendor/twitter` directory into your web directory (Your "Symfony" folder):
 
-    mkdir -p web/bundles/twitter
-    cd web/bundles/twitter
-    ln -s ../../../vendor/twitter/bootstrap bootstrap
+    cd web/bundles
+    ln -s ../../../vendor/twitter twitter
 
 [ Below are already in file, change if need. ]
 Now you can include boostrap css and js in main template:
@@ -132,6 +131,30 @@ Correct as below.
 	Hello world!!
 
 Finally, you can check the path ../app_dev.php/index.
+
+Customize CSS
+--------
+
+Go to Symfony directory in ssh :
+
+	php app/console assets:install web --symlink
+
+then add the command below in the composer.json :
+
+    "minimum-stability": "alpha",
+    "extra": {
+	"symfony-assets-install": "symlink"
+        }
+    }
+	}
+
+Create cusotom.css file in [yourdirectory]/Resources/public/css, then add below line into your page :
+
+	{% block [yournameblock] %}
+	<link rel="stylesheet" href="{{ asset('bundles/[yourdirectory]/css/custom.css') }}"> 
+	{% endblock %}
+
+then the CSS file will auto asset from your own bundle public and make it work in your own page.
 
 License
 -------
