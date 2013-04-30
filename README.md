@@ -8,13 +8,15 @@ PantaReiBootstrapBundle is a collection of code to integrate Twitter Bootstrap
 Installation
 ------------
 
-First you need to add `pantarei/bootstrap-bundle` to `composer.json` and execute the command `composer update` (in the Symfony directory ) :
+First you need to add `pantarei/bootstrap-bundle` to `composer.json` (in the Symfony directory ) :
 
     {
       "require": {
         "pantarei/bootstrap-bundle": "3.0.*@dev"
       }
     }
+
+and execute the command `composer update`:
 
 You also have to add `PantareiBootstrapBundle` to your `AppKernel.php`:
 
@@ -39,6 +41,7 @@ Since you are probably already using Composer this is the easiest way to get sta
         "twitter/bootstrap": "dev-3.0.0-wip"
       }
     }
+
 
 ### Without Assetic
 
