@@ -8,7 +8,7 @@ PantaReiBootstrapBundle is a collection of code to integrate Twitter Bootstrap
 Installation
 ------------
 
-First you need to add `pantarei/bootstrap-bundle` to `composer.json` and execute the command `composer update`:
+First you need to add `pantarei/bootstrap-bundle` to `composer.json` and execute the command `composer update` (in the Symfony directory ) :
 
     {
       "require": {
