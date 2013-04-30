@@ -105,34 +105,34 @@ License
 - The bundle is licensed under the [MIT License](http://opensource.org/licenses/MIT)
 - The CSS and Javascript from the Twitter Bootstrap are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-### Create Page
+Create Page
 --------
+
 Go to Symfony directory in ssh :
-php app/console generate:bundle --namespace=Pantarei/Bundle/[yournameBundle] --format=yml
+
+	php app/console generate:bundle --namespace=Pantarei/Bundle/[yournameBundle] --format=yml
 
 Check the name and the directory and press yes.
 
-Then ssh or sshfs to the file, [ symfony/src/your directory/Controller/DefaultController.php ]:
-Then correct as below.
+Then ssh or sshfs to the file, [ symfony/src/your directory/Controller/DefaultController.php ],then correct as below. :
 
+	namespace Pantarei\Bundle\WebBundle\Controller;
 
-namespace Pantarei\Bundle\WebBundle\Controller;
+	use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
-class DefaultController extends Controller
-{
+	class DefaultController extends Controller
+	{
     public function indexAction($path = 'index')
     {
         return $this->render('PantareiWebBundle:Default:' . $path . '.html.twig');
     }
-}
+	}
 
 
 also, ssh or sshfs to the file, [ symfony/src/your directory/Resources/config/routing.yml ]:
 Then correct as below.
 
-pantarei_web_homepage:
+	pantarei_web_homepage:
     pattern:  /{path}
     defaults: { _controller: PantareiWebBundle:Default:index, path: index }
     
