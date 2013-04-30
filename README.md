@@ -18,22 +18,15 @@ First you need to add `pantarei/bootstrap-bundle` to `composer.json`:
 
 You also have to add `PantareiBootstrapBundle` to your `AppKernel.php`:
 
-    // app/AppKernel.php
-    ...
     class AppKernel extends Kernel
     {
-      ...
-        public function registerBundles()
-        {
-          $bundles = array(
-              ...
-              new Pantarei\Bundle\BootstrapBundle\PantareiBootstrapBundle()
-              );
-          ...
-
-            return $bundles;
-        }
-      ...
+      public function registerBundles()
+      {
+      $bundles = array(
+          new Pantarei\Bundle\BootstrapBundle\PantareiBootstrapBundle()
+          );
+        return $bundles;
+      }
     }
 
 Assets
@@ -87,3 +80,20 @@ After that, the last thing we need is to include bootstrap in main template:
     %}
       <link rel="styleshet" href="{{ asset_url }} "/>
     {% endstylesheets %}
+
+Examples
+--------
+
+If you hope to enable the examples as reference, update your `app/config/routing.yml` file to this:
+
+    pantarei_bootstrap:
+        resource: "@PantareiBootstrapBundle/Resources/config/routing.yml"
+        prefix:   /_bootstrap
+
+Then you can access `_bootstrap/starter-template` or other pages as example.
+
+License
+-------
+
+- The bundle is licensed under the [MIT License](http://opensource.org/licenses/MIT)
+- The CSS and Javascript from the Twitter Bootstrap are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
