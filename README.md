@@ -42,7 +42,7 @@ Since you are probably already using Composer this is the easiest way to get sta
 
 ### Without Assetic
 
-Create symlink for the asset files from the `vendor/twitter/bootstrap` directory into your web directory:
+Create symlink for the asset files from the `vendor/twitter/bootstrap` directory into your web directory (Your "Symfony" folder):
 
     mkdir -p web/bundles/twitter
     cd web/bundles/twitter
