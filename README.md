@@ -152,7 +152,7 @@ and execute the command `composer update`:
 Create cusotom.css file in [yourdirectory]/Resources/public/css, then add below line into your page :
 
 	{% block styles %}
-	<link rel="stylesheet" href="{{ asset('bundles/[yourdirectory]/css/custom.css') }}"> 
+	<link rel="stylesheet" href="{{ asset('bundles/~~~[yourdirectory]~~~/css/custom.css') }}"> 
 	{% endblock %}
 
 then the CSS file will auto asset from your own bundle public and make it work in your own page.
