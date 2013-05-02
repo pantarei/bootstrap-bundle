@@ -136,7 +136,7 @@ Use Pantarei Bootstrap Lib
 --------
 Then you have to create a page with Bootstrap.
 
-For Symfony when you call any page in a html.twig, with Pantarie Booststrap Library  any demo .html.twig, add below command at the top:
+For Symfony when you call any new page .html.twig, with Pantarie Booststrap Library any demo .html.twig, please add below command at the top:
 
 	{% extends 'PantareiBootstrapBundle:Default:boilerplate.html.twig' %}
 
