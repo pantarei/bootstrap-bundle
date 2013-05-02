@@ -103,7 +103,7 @@ Create Page
 
 Go to Symfony directory in ssh :
 
-	php app/console generate:bundle --namespace=[yournameBundle] --format=yml
+	php app/console generate:bundle --namespace=Yourname/yourBundle --format=yml
 
 Check the name and the directory and press yes.
 
@@ -114,7 +114,7 @@ Then ssh or sshfs to the file, [ symfony/src/your directory/Controller/DefaultCo
 	{
     public function indexAction($path = 'index')
     {
-        return $this->render('[yournameBundle]:Default:' . $path . '.html.twig');
+        return $this->render('yournameBundle:Default:' . $path . '.html.twig');
     }
 	}
 
@@ -151,7 +151,7 @@ and execute the command `composer update`:
 
 Create cusotom.css file in [yourdirectory]/Resources/public/css, then add below line into your page :
 
-	{% block [yournameblock] %}
+	{% block styles %}
 	<link rel="stylesheet" href="{{ asset('bundles/[yourdirectory]/css/custom.css') }}"> 
 	{% endblock %}
 
