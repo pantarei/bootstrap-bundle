@@ -132,6 +132,20 @@ Correct as below.
 
 Finally, you can check the path ../app_dev.php/index.
 
+Use Pantarei Bootstrap Lib
+--------
+Then you have to create a page with Bootstrap.
+
+For Symfony when you call any page in a html.twig, with Pantarie Booststrap Library  any demo .html.twig, add below command at the top:
+
+	{% extends 'PantareiBootstrapBundle:Default:boilerplate.html.twig' %}
+
+
+if unknown, go to phy side folder to check and have a look the page detail.
+
+phy side folder : 
+../vendor/pantarei/bootsrap../Pantrei../Bundle/BootstrapBundle/Resources/views/Default/...html.twig
+
 Customize CSS
 --------
 
