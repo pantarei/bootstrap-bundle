@@ -149,7 +149,8 @@ then add the command below in the composer.json :
 and execute the command `composer update`:
 
 
-Create cusotom.css file in [yourdirectory]/Resources/public/css, then add below line into your page :
+Create cusotom.css file in [yourdirectory]/Resources/public/css:
+Then add below line into ANY .html.twig file to run your custom css :
 
 	{% block styles %}
 	<link rel="stylesheet" href="{{ asset('bundles/yourdirectory/css/custom.css') }}"> 
