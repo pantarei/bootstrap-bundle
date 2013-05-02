@@ -123,7 +123,7 @@ also, ssh or sshfs to the file, [ symfony/src/your directory/Resources/config/ro
 Then correct as below.
 
     pattern:  /{path}
-    defaults: { _controller: [yournameBundle]:Default:index, path: index }
+    defaults: { _controller:yournameBundle:Default:index, path: index }
     
 Then, ssh or sshfs to the file, [ symfony/src/your directory/Resources/views/Default/index.html.twig ]:
 Correct as below.
@@ -152,7 +152,7 @@ and execute the command `composer update`:
 Create cusotom.css file in [yourdirectory]/Resources/public/css, then add below line into your page :
 
 	{% block styles %}
-	<link rel="stylesheet" href="{{ asset('bundles/~~~[yourdirectory]~~~/css/custom.css') }}"> 
+	<link rel="stylesheet" href="{{ asset('bundles/yourdirectory/css/custom.css') }}"> 
 	{% endblock %}
 
 then the CSS file will auto asset from your own bundle public and make it work in your own page.
