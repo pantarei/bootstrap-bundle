@@ -51,7 +51,7 @@ and execute the command `composer update`:
 Create symlink for the asset files from the `vendor/twitter` directory into your web directory (Your "Symfony" folder):
 
     cd web/bundles
-    ln -s ../../../vendor/twitter twitter
+    ln -s ../../vendor/twitter twitter
 
 [ Below are already in file, change if need. ]
 Now you can include boostrap css and js in main template:
