@@ -22,9 +22,9 @@ First you need to add `pantarei/bootstrap-bundle` to `composer.json` (in
 the Symfony directory ) :
 
     {
-      "require": {
-        "pantarei/bootstrap-bundle": "3.0.*@dev"
-      }
+        "require": {
+            "pantarei/bootstrap-bundle": "3.0.*@dev"
+        }
     }
 
 and execute the command `composer update`:
@@ -34,13 +34,13 @@ symfony/app ):
 
     class AppKernel extends Kernel
     {
-      public function registerBundles()
-      {
-      $bundles = array(
-          new Pantarei\Bundle\BootstrapBundle\BootstrapBundle()
-          );
-        return $bundles;
-      }
+        public function registerBundles()
+        {
+            $bundles = array(
+                new Pantarei\Bundle\BootstrapBundle\BootstrapBundle();
+            );
+            return $bundles;
+        }
     }
 
 and execute the command `composer update`:
@@ -51,9 +51,9 @@ Assets
 Go to `composer.json` (in the Symfony directory ) :
 
     {
-      "require": {
-        "twitter/bootstrap": "dev-3.0.0-wip"
-      }
+        "require": {
+            "twitter/bootstrap": "dev-3.0.0-wip"
+        }
     }
 
 and execute the command `composer update`:
@@ -80,9 +80,9 @@ update your `composer.json` file and execute the following line:
 `composer update`:
 
     {
-      "require": {
-        "leafo/lessphp": "0.3.9"
-      }
+        "require": {
+            "leafo/lessphp": "0.3.9"
+        }
     }
 
 Now change your `app/config/config.yml` to this:

@@ -1,3 +1,27 @@
-_bootstrap_homepage:
-    pattern:  /{path}
-    defaults: { _controller: BootstrapBundle:Default:index, path: index }
+_bootstrap_boilerplate:
+    pattern:  /boilerplate
+    defaults: { _controller: BootstrapBundle:Default:boilerplate }
+
+_bootstrap_carousel:
+    pattern:  /carousel
+    defaults: { _controller: BootstrapBundle:Default:carousel }
+
+_bootstrap_grid:
+    pattern:  /grid
+    defaults: { _controller: BootstrapBundle:Default:grid }
+
+_bootstrap_index:
+    pattern:  /
+    defaults: { _controller: BootstrapBundle:Default:index }
+
+_bootstrap_page:
+    pattern:  /page
+    defaults: { _controller: BootstrapBundle:Default:page }
+
+_bootstrap_signin:
+    pattern:  /signin
+    defaults: { _controller: BootstrapBundle:Default:signin }
+
+_bootstrap_starter_template:
+    pattern:  /starter-template
+    defaults: { _controller: BootstrapBundle:Default:starterTemplate }

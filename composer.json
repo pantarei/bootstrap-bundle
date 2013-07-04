@@ -4,10 +4,6 @@
             "email": "hswong3i@pantarei-design.com",
             "homepage": "http://edin.no-ip.com",
             "name": "Wong Hoi Sing Edison"
-        },
-        {
-            "email": "wstang5c@pantarei-design.com",
-            "name": "Wilson Tang"
         }
     ],
     "autoload": {
@@ -35,6 +31,7 @@
         "symfony/framework-bundle": "~2.3"
     },
     "require-dev": {
+        "leafo/lessphp": "0.3.9",
         "satooshi/php-coveralls": "dev-master",
         "sensio/framework-extra-bundle": "2.3.*",
         "symfony/browser-kit": "2.3.*",
@@ -47,11 +44,8 @@
         "symfony/twig-bundle": "2.3.*",
         "symfony/validator": "2.3.*",
         "symfony/yaml": "2.3.*",
-        "twig/twig": "~1.11"
-    },
-    "suggest": {
-        "leafo/lessphp": "lessphp is a compiler for LESS written in PHP",
-        "twitter/bootstrap": "Sleek, intuitive, and powerful front-end framework for faster and easier web development"
+        "twig/twig": "~1.11",
+        "twitter/bootstrap": "dev-3.0.0-wip"
     },
     "target-dir": "Pantarei/Bundle/BootstrapBundle",
     "type": "symfony-bundle"
