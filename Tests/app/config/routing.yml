@@ -1,0 +1,3 @@
+_bootstrap:
+    resource: "@BootstrapBundle/Resources/config/routing.yml"
+    prefix:   /

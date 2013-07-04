@@ -1,2 +1,6 @@
-/composer.phar
-/vendor/
+Tests/app/cache/
+Tests/app/logs/
+build/
+composer.lock
+composer.phar
+vendor/

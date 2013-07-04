@@ -1,0 +1,26 @@
+framework:
+    #esi:             ~
+    #translator:      { fallback: %locale% }
+    secret:          fbe0b58410c7435d8b0afde3a2108fade7
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+        #assets_version: SomeVersionScheme
+    default_locale:  en
+    trusted_proxies: ~
+    fragments:       ~
+    test: ~
+    session:
+        storage_id:  session.storage.mock_file
+    profiler:
+        enabled:     false
+
+# Twig Configuration
+twig:
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%

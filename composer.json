@@ -1,42 +1,58 @@
 {
-    "name": "pantarei/bootstrap-bundle",
-    "type": "symfony-bundle",
-    "description": "Symfony BootstrapBundle",
-    "homepage": "https://github.com/pantarei/bootstrap-bundle",
-    "license": "MIT",
-    "keywords": [
-        "bootstrap",
-        "css"
-    ],
     "authors": [
         {
-            "name": "Wong Hoi Sing Edison",
             "email": "hswong3i@pantarei-design.com",
-            "homepage": "http://edin.no-ip.com"
+            "homepage": "http://edin.no-ip.com",
+            "name": "Wong Hoi Sing Edison"
         },
         {
-            "name": "Ho Shuk Yi Esther",
-            "email": "syho2d@pantarei-design.com"
-        },
-        {
-            "name": "Wilson Tang",
-            "email": "wstang5c@pantarei-design.com"
+            "email": "wstang5c@pantarei-design.com",
+            "name": "Wilson Tang"
         }
     ],
-    "require": {
-        "php": ">=5.3.2"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "3.7.*"
-    },
-    "suggest": {
-        "leafo/lessphp": "lessphp is a compiler for LESS written in PHP",
-        "twitter/bootstrap": "Sleek, intuitive, and powerful front-end framework for faster and easier web development"
-    },
     "autoload": {
         "psr-0": {
             "Pantarei\\Bundle\\BootstrapBundle": ""
         }
     },
-    "target-dir": "Pantarei/Bundle/BootstrapBundle"
+    "description": "Symfony BootstrapBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.x-dev"
+        }
+    },
+    "homepage": "https://github.com/pantarei/bootstrap-bundle",
+    "keywords": [
+        "bootstrap",
+        "css",
+        "symfony"
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "name": "pantarei/bootstrap-bundle",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": "~2.3"
+    },
+    "require-dev": {
+        "satooshi/php-coveralls": "dev-master",
+        "sensio/framework-extra-bundle": "2.3.*",
+        "symfony/browser-kit": "2.3.*",
+        "symfony/config": "2.3.*",
+        "symfony/css-selector": "2.3.*",
+        "symfony/dependency-injection": "2.3.*",
+        "symfony/finder": "2.3.*",
+        "symfony/form": "2.3.*",
+        "symfony/twig-bridge": "2.3.*",
+        "symfony/twig-bundle": "2.3.*",
+        "symfony/validator": "2.3.*",
+        "symfony/yaml": "2.3.*",
+        "twig/twig": "~1.11"
+    },
+    "suggest": {
+        "leafo/lessphp": "lessphp is a compiler for LESS written in PHP",
+        "twitter/bootstrap": "Sleek, intuitive, and powerful front-end framework for faster and easier web development"
+    },
+    "target-dir": "Pantarei/Bundle/BootstrapBundle",
+    "type": "symfony-bundle"
 }

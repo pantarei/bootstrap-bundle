@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction($path = 'index')
     {
-        return $this->render('PantareiBootstrapBundle:Default:' . $path . '.html.twig');
+        return $this->render('BootstrapBundle:Default:' . $path . '.html.twig');
     }
 }
