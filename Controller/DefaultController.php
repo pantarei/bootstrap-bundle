@@ -1,6 +1,6 @@
 <?php
 
-namespace Pantarei\Bundle\BootstrapBundle\Controller;
+namespace PantaRei\Bundle\BootstrapBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 

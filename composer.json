@@ -8,10 +8,10 @@
     ],
     "autoload": {
         "psr-0": {
-            "Pantarei\\Bundle\\BootstrapBundle": ""
+            "PantaRei\\Bundle\\BootstrapBundle": ""
         }
     },
-    "description": "Symfony BootstrapBundle",
+    "description": "Symfony2 BootstrapBundle",
     "extra": {
         "branch-alias": {
             "dev-master": "3.0.x-dev"
@@ -21,7 +21,7 @@
     "keywords": [
         "bootstrap",
         "css",
-        "symfony"
+        "symfony2"
     ],
     "license": "MIT",
     "minimum-stability": "dev",
@@ -47,6 +47,6 @@
         "twig/twig": "~1.11",
         "twitter/bootstrap": "dev-3.0.0-wip"
     },
-    "target-dir": "Pantarei/Bundle/BootstrapBundle",
+    "target-dir": "PantaRei/Bundle/BootstrapBundle",
     "type": "symfony-bundle"
 }

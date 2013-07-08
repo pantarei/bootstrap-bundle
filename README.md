@@ -1,4 +1,4 @@
-Pantarei/Bundle/BootstrapBundle
+PantaRei/Bundle/BootstrapBundle
 ===============================
 
 [![Build
@@ -10,7 +10,7 @@ Version](https://poser.pugx.org/pantarei/bootstrap-bundle/v/stable.png)](https:/
 [![Total
 Downloads](https://poser.pugx.org/pantarei/bootstrap-bundle/downloads.png)](https://packagist.org/packages/pantarei/bootstrap-bundle)
 
-[PantaRei/Bundle/BootstrapBundle](https://github.com/pantarei/bootstrap-bundle)
+[PantaRei\Bundle\BootstrapBundle](https://github.com/pantarei/bootstrap-bundle)
 is a collection of code to integrate [Twitter
 Bootstrap](http://twitter.github.com/bootstrap/) as easy as possible
 into your [Symfony2](http://www.symfony.com) Project.
@@ -37,7 +37,7 @@ symfony/app ):
         public function registerBundles()
         {
             $bundles = array(
-                new Pantarei\Bundle\BootstrapBundle\BootstrapBundle();
+                new PantaRei\Bundle\BootstrapBundle\BootstrapBundle();
             );
             return $bundles;
         }
@@ -146,7 +146,7 @@ Hello world!!
 
 Finally, you can check the path ../app\_dev.php/index.
 
-Use Pantarei Bootstrap Lib
+Use PantaRei Bootstrap Lib
 --------------------------
 
 Then you have to create a page with Bootstrap.

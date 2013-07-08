@@ -1,6 +1,6 @@
 <?php
 
-namespace Pantarei\Bundle\BootstrapBundle\DependencyInjection;
+namespace PantaRei\Bundle\BootstrapBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

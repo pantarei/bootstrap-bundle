@@ -1,6 +1,6 @@
 <?php
 
-namespace Pantarei\Bundle\BootstrapBundle;
+namespace PantaRei\Bundle\BootstrapBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -1,5 +1,5 @@
 parameters:
-#    pantarei_bootstrap.example.class: Pantarei\Bundle\BootstrapBundle\Example
+#    pantarei_bootstrap.example.class: PantaRei\Bundle\BootstrapBundle\Example
 
 services:
 #    pantarei_bootstrap.example:
