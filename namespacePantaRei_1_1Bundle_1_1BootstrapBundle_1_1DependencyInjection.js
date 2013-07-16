@@ -1,0 +1,5 @@
+var namespacePantaRei_1_1Bundle_1_1BootstrapBundle_1_1DependencyInjection =
+[
+    [ "BootstrapExtension", "classPantaRei_1_1Bundle_1_1BootstrapBundle_1_1DependencyInjection_1_1BootstrapExtension.html", "classPantaRei_1_1Bundle_1_1BootstrapBundle_1_1DependencyInjection_1_1BootstrapExtension" ],
+    [ "Configuration", "classPantaRei_1_1Bundle_1_1BootstrapBundle_1_1DependencyInjection_1_1Configuration.html", "classPantaRei_1_1Bundle_1_1BootstrapBundle_1_1DependencyInjection_1_1Configuration" ]
+];
