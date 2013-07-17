@@ -1,4 +1,4 @@
-PantaRei/Bundle/BootstrapBundle
+Pantarei/Bundle/BootstrapBundle
 ===============================
 
 [![Build
@@ -10,7 +10,7 @@ Version](https://poser.pugx.org/pantarei/bootstrap-bundle/v/stable.png)](https:/
 [![Total
 Downloads](https://poser.pugx.org/pantarei/bootstrap-bundle/downloads.png)](https://packagist.org/packages/pantarei/bootstrap-bundle)
 
-[PantaRei\Bundle\BootstrapBundle](https://github.com/pantarei/bootstrap-bundle)
+[Pantarei\Bundle\BootstrapBundle](https://github.com/pantarei/bootstrap-bundle)
 is a collection of code to integrate [Twitter
 Bootstrap](http://twitter.github.com/bootstrap/) as easy as possible
 into your [Symfony2](http://www.symfony.com) Project.
@@ -29,7 +29,7 @@ the Symfony directory ) :
 
 and execute the command `composer update`:
 
-You also have to add `BootstrapBundle` to your `AppKernel.php` (in the
+You also have to add `PantareiBootstrapBundle` to your `AppKernel.php` (in the
 symfony/app ):
 
     class AppKernel extends Kernel
@@ -37,7 +37,7 @@ symfony/app ):
         public function registerBundles()
         {
             $bundles = array(
-                new PantaRei\Bundle\BootstrapBundle\BootstrapBundle();
+                new Pantarei\Bundle\BootstrapBundle\PantareiBootstrapBundle();
             );
             return $bundles;
         }
@@ -110,7 +110,7 @@ If you hope to enable the examples as reference, update your
 `app/config/routing.yml` file to this:
 
     pantarei_bootstrap:
-        resource: "@BootstrapBundle/Resources/config/routing.yml"
+        resource: "@PantareiBootstrapBundle/Resources/config/routing.yml"
         prefix:   /_bootstrap
 
 Then you can access `_bootstrap/starter-template` or other pages as
@@ -146,7 +146,7 @@ Hello world!!
 
 Finally, you can check the path ../app\_dev.php/index.
 
-Use PantaRei Bootstrap Lib
+Use Pantarei Bootstrap Lib
 --------------------------
 
 Then you have to create a page with Bootstrap.
@@ -155,7 +155,7 @@ For Symfony when you call any new page .html.twig, with Pantarie
 Booststrap Library any demo .html.twig, please add below command at the
 top:
 
-{% extends 'BootstrapBundle:Default:boilerplate.html.twig' %}
+{% extends 'PantareiBootstrapBundle:Default:boilerplate.html.twig' %}
 
 if unknown, go to phy side folder to check and have a look the page
 detail.

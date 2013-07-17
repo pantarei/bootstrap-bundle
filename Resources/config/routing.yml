@@ -1,27 +1,27 @@
 _bootstrap_boilerplate:
     pattern:  /boilerplate
-    defaults: { _controller: BootstrapBundle:Default:boilerplate }
+    defaults: { _controller: PantareiBootstrapBundle:Default:boilerplate }
 
 _bootstrap_carousel:
     pattern:  /carousel
-    defaults: { _controller: BootstrapBundle:Default:carousel }
+    defaults: { _controller: PantareiBootstrapBundle:Default:carousel }
 
 _bootstrap_grid:
     pattern:  /grid
-    defaults: { _controller: BootstrapBundle:Default:grid }
+    defaults: { _controller: PantareiBootstrapBundle:Default:grid }
 
 _bootstrap_index:
     pattern:  /
-    defaults: { _controller: BootstrapBundle:Default:index }
+    defaults: { _controller: PantareiBootstrapBundle:Default:index }
 
 _bootstrap_page:
     pattern:  /page
-    defaults: { _controller: BootstrapBundle:Default:page }
+    defaults: { _controller: PantareiBootstrapBundle:Default:page }
 
 _bootstrap_signin:
     pattern:  /signin
-    defaults: { _controller: BootstrapBundle:Default:signin }
+    defaults: { _controller: PantareiBootstrapBundle:Default:signin }
 
 _bootstrap_starter_template:
     pattern:  /starter-template
-    defaults: { _controller: BootstrapBundle:Default:starterTemplate }
+    defaults: { _controller: PantareiBootstrapBundle:Default:starterTemplate }

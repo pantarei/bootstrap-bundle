@@ -8,7 +8,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "PantaRei\\Bundle\\BootstrapBundle": ""
+            "Pantarei\\Bundle\\BootstrapBundle": ""
         }
     },
     "description": "Symfony2 BootstrapBundle",
@@ -47,6 +47,6 @@
         "twig/twig": "~1.11",
         "twitter/bootstrap": "dev-3.0.0-wip"
     },
-    "target-dir": "PantaRei/Bundle/BootstrapBundle",
+    "target-dir": "Pantarei/Bundle/BootstrapBundle",
     "type": "symfony-bundle"
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace PantaRei\Bundle\BootstrapBundle\Tests\Controller;
+namespace Pantarei\Bundle\BootstrapBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
