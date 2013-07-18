@@ -1,27 +1,27 @@
-_bootstrap_boilerplate:
+pantarei_bootstrap_boilerplate:
     pattern:  /boilerplate
     defaults: { _controller: PantareiBootstrapBundle:Default:boilerplate }
 
-_bootstrap_carousel:
+pantarei_bootstrap_carousel:
     pattern:  /carousel
     defaults: { _controller: PantareiBootstrapBundle:Default:carousel }
 
-_bootstrap_grid:
+pantarei_bootstrap_grid:
     pattern:  /grid
     defaults: { _controller: PantareiBootstrapBundle:Default:grid }
 
-_bootstrap_index:
+pantarei_bootstrap_index:
     pattern:  /
     defaults: { _controller: PantareiBootstrapBundle:Default:index }
 
-_bootstrap_page:
+pantarei_bootstrap_page:
     pattern:  /page
     defaults: { _controller: PantareiBootstrapBundle:Default:page }
 
-_bootstrap_signin:
+pantarei_bootstrap_signin:
     pattern:  /signin
     defaults: { _controller: PantareiBootstrapBundle:Default:signin }
 
-_bootstrap_starter_template:
+pantarei_bootstrap_starter_template:
     pattern:  /starter-template
     defaults: { _controller: PantareiBootstrapBundle:Default:starterTemplate }

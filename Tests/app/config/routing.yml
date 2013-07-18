@@ -1,3 +1,3 @@
-_bootstrap:
+pantarei_bootstrap:
     resource: "@PantareiBootstrapBundle/Resources/config/routing.yml"
     prefix:   /
