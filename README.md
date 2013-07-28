@@ -69,9 +69,9 @@ into your web directory (Your "Symfony" folder):
 [ Below are already in file, change if need. ] Now you can include
 boostrap css and js in main template:
 
-    <link rel="stylesheet" href="{{ asset('bundles/twitter/bootstrap/docs/assets/css/bootstrap.css') }}">
-    <script src="{{ asset('bundles/twitter/bootstrap/docs/assets/js/jquery.js') }}"></script>
-    <script src="{{ asset('bundles/twitter/bootstrap/docs/assets/js/bootstrap.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('bundles/twitter/bootstrap/dist/css/bootstrap.min.css') }}">
+    <script src="{{ asset('bundles/twitter/bootstrap/assets/js/jquery.js') }}"></script>
+    <script src="{{ asset('bundles/twitter/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
 ### With Assetic
 
